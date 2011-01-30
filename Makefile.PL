@@ -20,7 +20,7 @@ my %WriteMakefileArgs = (
   'LICENSE' => 'perl',
   'NAME' => 'Dancer::Template::MojoTemplate',
   'PREREQ_PM' => {},
-  'VERSION' => '0.001',
+  'VERSION' => '0.1.0',
   'test' => {
     'TESTS' => ''
   }
