@@ -4,25 +4,30 @@ use warnings;
 
 
 
-use ExtUtils::MakeMaker 6.31;
+use ExtUtils::MakeMaker 6.30;
 
 
 
 my %WriteMakefileArgs = (
   'ABSTRACT' => 'Mojo::Template wrapper for Dancer',
   'AUTHOR' => 'James Aitken <jaitken@cpan.org>',
-  'BUILD_REQUIRES' => {},
+  'BUILD_REQUIRES' => {
+    'Test::More' => '0'
+  },
   'CONFIGURE_REQUIRES' => {
-    'ExtUtils::MakeMaker' => '6.31'
+    'ExtUtils::MakeMaker' => '6.30'
   },
   'DISTNAME' => 'Dancer-Template-MojoTemplate',
   'EXE_FILES' => [],
   'LICENSE' => 'perl',
   'NAME' => 'Dancer::Template::MojoTemplate',
-  'PREREQ_PM' => {},
-  'VERSION' => '0.1.0',
+  'PREREQ_PM' => {
+    'Dancer::Template::Abstract' => '0',
+    'Mojo::Template' => '0'
+  },
+  'VERSION' => '0.2.0',
   'test' => {
-    'TESTS' => ''
+    'TESTS' => 't/*.t'
   }
 );
 

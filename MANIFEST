@@ -1,7 +1,8 @@
+CHANGES
 LICENSE
 MANIFEST
 META.yml
 Makefile.PL
 README
-dist.ini
 lib/Dancer/Template/MojoTemplate.pm
+t/001_basics.t
